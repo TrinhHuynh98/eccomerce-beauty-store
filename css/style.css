@@ -36,13 +36,13 @@
 .footer-main {
   background-color: black;
   width: 100%;
-  height: 30vh; 
+  /* height: 30vh;  */
   overflow: auto; 
 }
 
 .header-login {
-  background: url(/images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
-  max-width: 1920px;
+  background: url(../images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
+  min-width: 1920px;
   height: 100vh;
   overflow: auto; 
   position: relative;
@@ -254,8 +254,8 @@
 
 .product-detail-bg {
   background: var(--background);
-  height: 50vh;
-  overflow: auto; 
+  /* height: 50vh; */
+  /* overflow: auto;  */
 }
 
 .product-detail-item {
@@ -445,7 +445,7 @@
 }
 
 .header-product-page {
-  background: url(/images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
+  background: url(../images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
   max-width: 1920px;
   height: 40vh;
   position: relative;
@@ -464,7 +464,7 @@
 }
 
 .header {
-  background: url(/images/Layer_44.png);
+  background: url(../images/Layer_44.png);
   max-width: 1920px;
   height: 40vh;
   position: relative;
@@ -475,9 +475,10 @@
   left: 0px;
   top: 0px;
   right: 0px;
-  background-color: black;
+  background-color: transparent;
   height: 52px;
   vertical-align: middle;
+ 
 }
 
 .wrapper {
@@ -901,8 +902,31 @@ input[type="search"]::placeholder {
   overflow: auto; 
 }
 
-/* header mobile  style */
-@media only screen and (max-width: 800px) {
+.filter-container-mobile {
+  display: none;
+}
+
+/* header tablet  style */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+
+  .filter-container-mobile {
+    display: none;
+  }
+
+  .product-detail-bg {
+    background: var(--background);
+    height: 60vh;
+    overflow: auto; 
+  }
+
+  .header-product-page {
+    background: url(../images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
+    max-width: 1920px;
+    height: 30vh;
+    position: relative;
+    background-size: cover;
+  }
+
 
 .comment-input {
   display: grid;
@@ -974,7 +998,7 @@ input[type="search"]::placeholder {
   }
 
   .header-login {
-    background: url(/images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
+    background: url(../images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
     max-width: 1920px;
     height: 70vh;
     overflow: auto; 
@@ -1045,6 +1069,7 @@ input[type="search"]::placeholder {
 
   .login-form-mobile .login-items p {
     margin-bottom: 5px;
+    text-align: left;
   }
 
   .login-form-mobile button {
@@ -1361,7 +1386,7 @@ input[type="search"]::placeholder {
 
   #top_header {
     /* position: fixed; */
-    background-color: black;
+    background-color: transparent;
     height: 52px;
   }
 
@@ -1510,6 +1535,816 @@ input[type="search"]::placeholder {
   .main-container {
     overflow-y: auto;
     height: 50vh;
+  }
+
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 414px){
+
+  .filter {
+    display: none;
+  }
+
+  .filter-mobile .filter-container-mobile {
+    background: white; 
+    padding: 10px; 
+    margin-top: 30px;
+    display: block;
+  }
+
+  .filter-container-mobile input {
+    height: 32px;
+    border: 1px solid #ccc;
+    background: transparent;
+    margin: 10px;
+    width: 90%;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    outline: none;
+    border-radius: 8px;
+  }
+
+  .filter-container-mobile select {
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    margin: 10px;
+    width: 90%;
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+
+  .range-price-mobile {
+    display: flex;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+
+  .range-price-mobile input {
+    height: 32px;
+
+  }
+
+  .range-price-mobile p {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .filter-container-mobile button {
+    width: 30%;
+    height: 32px;
+    margin-left: 10px;
+    background: var(--title-text);
+    color: white; 
+    border: none; 
+    border-radius: 8px;
+  
+  }
+
+
+  .filter-container-mobile button:hover {
+    width: 30%;
+    height: 32px;
+    margin-left: 10px;
+    background: var(--hover-color);
+    color: white; 
+    border: none; 
+    border-radius: 8px;
+  
+  }
+
+
+.header-product-page {
+  background: url(../images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
+  max-width: 1920px;
+  height: 30vh;
+  position: relative;
+  background-size: cover;
+}
+
+.product-detail-bg {
+  
+  height: 60vh;
+  overflow: auto; 
+}
+
+.comment-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.comment-input input {
+  width: auto;
+}
+
+
+.comment-input .comments {
+  margin-left: 20px;
+  height: 52px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+  .product-detail-main {
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .product-items {
+    text-align: center
+  }
+
+  .store-info {
+    text-align: center
+  }
+
+  .user-feedback {
+    display: inline;
+  }
+
+  .product-detail-info h2, p, h5{
+   text-align: center;
+   margin-top: 20px;
+  } 
+
+  .sort-comment {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    align-items: center
+  }  
+ 
+ 
+  .product-detail-info .btn-action , .social-list {
+   text-align: center 
+  }
+
+  .product-detail-info .product-rating {
+    text-align: center;
+    margin-top: 10px; 
+  }
+
+  .line-container {
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .line-container small {
+    text-align: center;
+  }
+
+  .header-login {
+    background: url(../images/wallpapersden.com_windows-11-4k-green-glow_3840x2400.png);
+    max-width: 1920px;
+    height: 70vh;
+    overflow: auto; 
+    position: relative;
+    background-size: cover;
+  }
+
+  .footer-main {
+    height: 30vh; 
+    overflow: auto; 
+  }
+
+  .login-container {
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+  }
+
+  .social-login {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-login .login-fb {
+    margin-bottom: 10px; 
+    min-width: 200px;
+    margin-right: 0px;
+  }
+
+  .social-login .login-google {
+    margin-bottom: 20px; 
+    min-width: 200px;
+    margin-left: 0px;
+    }
+  
+  
+  .login-form {
+    display: none;
+  }
+
+  .login-form-mobile {
+    width: 100%;
+    display: flex; 
+    margin-bottom: 10px
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .login-form-mobile .login-items {  
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    width: 100%
+  }
+
+  
+  .login-form-mobile .login-items input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    
+  }
+
+  .login-form-mobile .login-items p {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .login-form-mobile button {
+    display: flex; 
+    justify-content: center;
+    /* margin-left: 200px;  */
+    padding: 10px 20px;; 
+    color: white; 
+    background: var(--title-text);
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background: var(--hover-color)
+  }
+  
+  .login-container h1 {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align:: center;
+  }
+  
+  .social-login {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+  
+  }
+  
+  .social-login img {
+    cursor: pointer;
+    width: 15px; 
+    height: 15px;
+    margin-right: 10px
+  }
+  
+  .social-login .login-google {
+    background: white; 
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    width: auto;
+    height: 48px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+  }
+  
+  .social-login .login-fb {
+    background: #1877F2; 
+    padding: 10px;
+   color: white; 
+   border-radius: 8px; 
+   border: none; 
+   width: auto;
+   height: 48px;
+   cursor: pointer; 
+  }
+  
+  .social-login .login-fb i {
+    color: white;
+  }
+
+  .product-detail-item {
+    display: grid;
+    grid-template-column: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .product-detail-image {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .product-detail-container {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+  }
+
+  .product-detail-info p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 16px;
+  }
+
+  .product-detail-info .btn-cart {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--title-text);
+    color: var(--title-text);
+    cursor: pointer; 
+  }
+
+
+  .sub-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
+  }
+
+  .product-detail-info .btn-buy {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--title-text);
+    border: 1px solid var(--title-text);
+    color: white;
+  }
+
+  .social-list img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .product-items h2 {
+    padding: 20px;
+    font-size: 18px;
+    color: var(--sub-text);
+  }
+
+  .product-items ul {
+    padding: 20px;
+  }
+
+  .product-items ul li {
+    color: var(--sub-text);
+  }
+
+  .product-detail-info .text-price {
+    color: var(--title-text);
+    font-weight: bold;
+  }
+  .product-detail-info .text-voucher {
+    color: var(--vouchers);
+  }
+
+  .product-detail {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .list-product {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .filter {
+    position: absolute;
+    margin-top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .filter-container {
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter-container input {
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    margin: 10px;
+    width: 50%;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border-radius: inherit;
+    outline: none;
+  }
+
+  .filter-container select {
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    margin: 10px;
+    width: 30%;
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+
+  .range-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .range-price input {
+    height: 32px;
+  }
+
+  .range-price p {
+    font-size: 12px;
+  }
+
+  .filter-container button {
+    width: 30%;
+    height: 32px;
+  }
+
+  .product-item {
+    display: none;
+  }
+
+  .product-item-mobile-container {
+    margin-bottom: 20px;
+  }
+
+  .product-item-mobile {
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .product-item-mobile .product-name {
+    font-szie: 16px;
+    text-align: center;
+  }
+
+  .product-item-mobile .product-img  {
+   display: flex; 
+   justify-content: center
+   
+  }
+
+  .product-item-mobile .product-img img {
+    width: 100%;
+  }
+
+  .product-item-mobile .product-rating {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .product-item-mobile .status {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-item-mobile .product-price {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .product-item-mobile .add-to-cart {
+    text-align: center;
+  }
+
+  .product-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-list button {
+    padding: 5px 5px;
+  }
+
+  .slide-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .slide-item img {
+    width: 100%;
+  }
+
+  .category-list {
+   display: grid; 
+   grid-template-columns: 100%;
+  }
+
+  .category-list .category-item {
+    display: inline; 
+    text-align: center;
+    margin: 10px;
+  }
+
+  .category-list .category-item div {
+    text-align: center;
+   }
+
+  .category-list .category-item div h1 {
+   font-size: 18px;
+  }
+
+  .category-list .category-item div p {
+    font-size: 12px;
+   }
+
+  .category-item img {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+    padding: 10px 10;
+  }
+
+  .header {
+    max-width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .wrapper {
+    padding: 0 10px;
+    width: auto;
+  }
+
+  #top_header {
+    background-color: transparent;;
+    height: 52px;
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .header-container-mobile {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-container-mobile .logo-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-container-mobile .logo-mobile img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .header-container-mobile h1 {
+    color: #8d8d8d;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  .header-container-mobile .action-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-container-mobile .action-mobile button {
+    color: #cccccc;
+    background: none;
+    border: none;
+    margin-left: 10px;
+  }
+
+  .banner {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: auto;
+  }
+
+  .top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-banner img {
+    height: 32px;
+    width: 32px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .main-logo img {
+    display: none;
+  }
+
+  .searchbar {
+    margin-top: 0px;
+    border-radius: 8px;
+    padding: 2px;
+    border: 1px solid #999999;
+    height: 37px;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+  }
+
+  .searchbar img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .searchbar img {
+    height: 16px;
+    width: 16px;
+  }
+
+  input[type="search"]::placeholder {
+    font-size: 12px;
+  }
+
+  .searchbar p {
+    color: #8d8d8d;
+    font-size: 12px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    z-index: 999
+  }
+
+  .mobile-nav i {
+    font-size: 25px;
+    color: #ccc;
+    
+  }
+
+  .mobile-nav li {
+    padding: 5px 10px; 
+    background: transparent;
+  }
+
+  .mobile-nav li:hover {
+    background: var(--title-text); 
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 5px 10px; 
+  }
+
+  .mobile-nav i:hover {
+    color: white;
+  }
+
+
+
+  .main-container {
+    overflow-y: auto;
+    height: auto;
+  }
+
+  .footer {
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns:100%;
+    gap: 5px;
+    padding: 20px 10px;
+  }
+  
+  .col-1 h1 {
+    font-size: 18px;
+  }
+
+  
+  .col-1 p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .col-1 ul li {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .hightlight-text {
+    margin-top: 1px;
+    font-size: 18px;
+  }
+  
+  .col-2 h1 {
+    font-size: 18px;
+  }
+  
+  .col-2 p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .col-2 ul li {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .action-mobile i {
+    display: none;
+  }
+
+  .action-mobile button:hover {
+    color: white
+  }
+
+  .top-banner .cart-icon {
+    height: 32px;
+    width: 32px;
+    margin-top: 0px;
+  }
+
+  .top-banner  .searchbar input[type="search"] {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  .searchbar {
+    max-width: auto;
+  }
+
+  .login-header h1 {
+    font-size: 18px;
+  }
+
+  .social-login .login-google {
+    max-width: 187px;
+    height: 38px;
+    margin-left: -1px;
+  }
+  
+  .social-login .login-fb {
+   max-width: 187px;
+   height: 38px;
   }
 
 }
