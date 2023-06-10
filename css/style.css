@@ -2133,8 +2133,8 @@ input[type="search"]::placeholder {
   }
 
   .header-container-mobile .logo-mobile img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-right: 5px;
     cursor: pointer;
   }
