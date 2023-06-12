@@ -17,10 +17,9 @@
     <title>Document</title>
 </head>
 
-<body class="body-container">
+<body style="background-color: #F7F7F7;">
 
     <header class="header">
-
         <!-- banner style  -->
         <div class="banner">
             <!-- top header  -->
@@ -28,77 +27,86 @@
                 <div class="wrapper">
                     <div class="header-container">
                         <div id="logo_top">
-                            <h1>GG NEWS<h1>
-                                    <a href=""><img class="icons" src="/images/facebook(1).png" alt="fb" /></a>
-                                    <a href="">
-                                        <img class="icons" src="/images/instagram(2).png" alt="ins" />
-                                    </a>
-                                    <a href="">
-                                        <img class="icons" src="/images/twitter(2).png" alt="ins" />
-                                    </a>
+                            <a href="index.html">GG NEWS</a>
 
+                            <a href=""><img class="icons" src="/images/facebook(1).png" alt="fb" /></a>
+                            <a href="">
+                                <img class="icons" src="/images/instagram(2).png" alt="ins" />
+                            </a>
+                            <a href="">
+                                <img class="icons" src="/images/twitter(2).png" alt="ins" />
+                            </a>
                         </div>
 
                         <div class="header-action">
                             <button style="cursor: pointer">
-                                <div class="btn-action">
+                                <a href="login.html" class="btn-action">
                                     <img src="/images/edit(1).png" alt="dang ky" />
                                     <p>Đăng Ký</p>
-                                </div>
+                                </a>
 
                             </button>
                             <button style="cursor: pointer">
-                                <div class="btn-action">
+                                <a href="login.html" class="btn-action">
                                     <img src="/images/enter(3).png" alt="dang nhap" />
                                     <p>Đăng Nhập</p>
-                                </div>
+                                </a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="header-container-mobile">
                     <div class="logo-mobile">
-                        <h1>GG NEWS<h1>
-                                <a href=""><img class="icons" src="/images/facebook(1).png" alt="fb" /></a>
-                                <a href="">
-                                    <img class="icons" src="/images/instagram(2).png" alt="ins" />
-                                </a>
-                                <a href="">
-                                    <img class="icons" src="/images/twitter(2).png" alt="ins" />
-                                </a>
+                        <a href="index.html">GG NEWS</a>
+                        <a href=""><img class="icons" src="/images/facebook(1).png" alt="fb" /></a>
+                        <a href="">
+                            <img class="icons" src="/images/instagram(2).png" alt="ins" />
+                        </a>
+                        <a href="">
+                            <img class="icons" src="/images/twitter(2).png" alt="ins" />
+                        </a>
                     </div>
 
                     <div class="action-mobile">
-                        <button><i class="fa-solid fa-pen-to-square"></i> Đăng Ký</button>
-                        <button class="btn-login"><i class="fa-solid fa-right-to-bracket"></i>
-                            Đăng Nhập
+                        <button><a href=""><i class="fa-solid fa-pen-to-square"></i> Đăng Ký</a></button>
+                        <button>
+                            <a href=""><i class=" fa-solid fa-right-to-bracket"></i>Đăng Nhập</a>
                         </button>
                     </div>
-
                 </div>
             </div>
+        </div>
 
+        <div class="wrapper-banner">
             <div class="top-banner">
                 <div class="searchbar">
                     <input type="search" placeholder="tìm kiếm">
                     <img src="./images/magnifier(1).png" alt="search" />
-
                 </div>
-                <img class="cart-icon" src="./images/shopping-cart(2).png" alt="cart" />
+                <div class="cart-container">
+                    <a href="#">
+                        <img class="cart-icon" src="./images/shopping-cart(2).png" alt="cart" />
+                        <span>
+                            1
+                        </span>
+                    </a>
+                </div>
             </div>
+        </div>
 
 
+        <div class="wrapper">
             <div class="nav-bar">
                 <div class="main-logo">
-                    <img src="./images/logo GGnews.png" alt="logo" />
+                    <a href="/"><img src="./images/logo GGnews.png" alt="logo" /></a>
                 </div>
                 <!-- <div class="main-nav"> -->
                 <ul class="main-nav">
-                    <li><a href="">trang chủ</a></li>
-                    <li><a href="">giới thiệu</a></li>
-                    <li><a href="">sản phẩm</a></li>
-                    <li><a href="">tin tức</a></li>
-                    <li><a href="">liên hệ</a></li>
+                    <li><a href="index.html">trang chủ</a></li>
+                    <li><a href="index.html">giới thiệu</a></li>
+                    <li><a href="product-page.html">sản phẩm</a></li>
+                    <li><a href="index.html">tin tức</a></li>
+                    <li><a href="index.html">liên hệ</a></li>
                 </ul>
                 <ul class="mobile-nav">
                     <li><a href=""><i class="fa-solid fa-house"></i></a></li>
@@ -110,14 +118,12 @@
             </div>
         </div>
 
-
-        </div>
     </header>
 
     <main class="main-container">
 
         <!-- category list -->
-        <div class=" wrapper">
+        <div class=" wrapper-container">
             <div class="category-list">
                 <div class="category-item">
                     <img src="./images/fast-delivery.png" alt="ca-item" />
@@ -178,118 +184,50 @@
             </div>
         </div>
         <!-- Danh muc san pham  -->
-        <div class="wrapper">
-            <div class="header-list">
-                <div class="tilte-text">
-                    danh mục sản phẩm
+        <section>
+            <div class="wrapper-container">
+                <div class="header-list">
+                    <div class="tilte-text">
+                        <a href="product-page.html"> danh mục sản phẩm</a>
+                    </div>
+                    <hr class="title-line" />
                 </div>
-                <hr class="title-line" />
+                <div class="product-list">
+                    <button> <a href="#">Xe cộ</a> </button>
+                    <button> <a href="#">Thời trang</a> </button>
+                    <button> <a href="#">Điện tử</a> </button>
+                    <button> <a href="#">Đồng hồ</a> </button>
+                    <button> <a href="#">Giầy dép</a> </button>
+                    <button> <a href="#">Mỹ phẩm</a> </button>
+                    <button> <a href="#">Gia dụng</a> </button>
+                    <button> <a href="#">Thực phẩm chức năng</a> </button>
+                </div>
             </div>
-            <div class="product-list">
-                <button> Xe cộ </button>
-                <button> Thời trang </button>
-                <button> Điện tử </button>
-                <button> Đồng hồ </button>
-                <button> Giầy dép </button>
-                <button> Mỹ phẩm </button>
-                <button> Gia dụng </button>
-                <button> Thực phẩm chức năng </button>
-            </div>
-        </div>
+        </section>
+
+
         <!-- sản phẩm nổi bật  -->
-        <div class="wrapper">
-            <div class="header-list">
-                <div class="tilte-text">
-                    sản phẩm nổi bật
+        <section>
+            <div class="wrapper-container">
+                <div class="header-list">
+                    <div class="tilte-text">
+                        <a href="product-page.html">sản phẩm nổi bật</a>
+                    </div>
+                    <hr class="title-line" />
                 </div>
-                <hr class="title-line" />
-            </div>
-            <div>
-                <div class="product-item">
-                    <div class="product-img">
-                        <img alt="product item" src="./images/p4.png" />
-                        <span class="badge bg-danger" class="badge">
-                            <img src="./images/insurance.png" alt="" />
-                        </span>
-                    </div>
-                    <p class="product-name">
-                        Mỹ phẩm Hàn Quốc AZ
-                        Solutions Premium
-                    </p>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="product-status">
-                        <p>Đã bán </p>
-                        35
-                    </div>
-                    <div class="product-stock">
-                        <p>Còn lại</p>
-                        903
-                    </div>
-                    <div class="product-price">
-                        99.00 vnd
-                    </div>
-                    <div class="add-to-cart">
-                        <button>
-                            Thêm vào giở hàng
-                        </button>
-                    </div>
-                    <hr class="product-line" />
-                </div>
-                <div class="product-item">
-                    <div class="product-img">
-                        <img alt="product item" src="./images/p4.png" />
-                        <span class="badge bg-danger" class="badge">
-                            <img src="./images/insurance.png" alt="" />
-                        </span>
-                    </div>
-                    <p class="product-name">
-                        Mỹ phẩm Hàn Quốc AZ
-                        Solutions Premium
-                    </p>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="product-status">
-                        <p>Đã bán </p>
-                        35
-                    </div>
-                    <div class="product-stock">
-                        <p>Còn lại</p>
-                        903
-                    </div>
-                    <div class="product-price">
-                        99.00 vnd
-                    </div>
-                    <div class="add-to-cart">
-                        <button>
-                            Thêm vào giở hàng
-                        </button>
-                    </div>
-                    <hr class="product-line" />
-                </div>
-            </div>
-            <div>
-                <div class="product-item-mobile">
-                    <div class="product-item-mobile-container">
+                <div>
+                    <div class="product-item">
                         <div class="product-img">
-                            <img alt="product item" src="./images/p4.png" />
+
+                            <a href="product-detail.html"> <img alt="product item" src="./images/p4.png" /></a>
                             <span class="badge bg-danger" class="badge">
                                 <img src="./images/insurance.png" alt="" />
                             </span>
                         </div>
                         <p class="product-name">
-                            Mỹ phẩm Hàn Quốc AZ
-                            Solutions Premium
+                            <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                <br />
+                                Solutions Premium</a>
                         </p>
                         <div class="product-rating">
                             <i class="fa-solid fa-star"></i>
@@ -298,35 +236,37 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="status">
-                            <div class="product-status">
-                                <p>Đã bán </p>
-                                35
-                            </div>
-                            <div class="product-stock">
-                                <p>Còn lại</p>
-                                903
-                            </div>
+                        <div class="product-status">
+                            <p>Đã bán </p>
+                            35
+                        </div>
+                        <div class="product-stock">
+                            <p>Còn lại</p>
+                            903
                         </div>
                         <div class="product-price">
                             99.00 vnd
                         </div>
                         <div class="add-to-cart">
                             <button>
-                                Thêm vào giở hàng
+                                <a href="#"> Thêm vào giỏ hàng</a>
                             </button>
                         </div>
+                        <hr class="product-line" />
                     </div>
-                    <div class="product-item-mobile-container">
+                    <div class="product-item">
                         <div class="product-img">
-                            <img alt="product item" src="./images/p4.png" />
+
+                            <a href="product-detail.html"><img alt="product item" src="./images/p4.png" /></a>
+
                             <span class="badge bg-danger" class="badge">
                                 <img src="./images/insurance.png" alt="" />
                             </span>
                         </div>
                         <p class="product-name">
-                            Mỹ phẩm Hàn Quốc AZ
-                            Solutions Premium
+                            <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                <br />
+                                Solutions Premium</a>
                         </p>
                         <div class="product-rating">
                             <i class="fa-solid fa-star"></i>
@@ -335,128 +275,139 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="status">
-                            <div class="product-status">
-                                <p>Đã bán </p>
-                                35
-                            </div>
-                            <div class="product-stock">
-                                <p>Còn lại</p>
-                                903
-                            </div>
+                        <div class="product-status">
+                            <p>Đã bán </p>
+                            35
+                        </div>
+                        <div class="product-stock">
+                            <p>Còn lại</p>
+                            903
                         </div>
                         <div class="product-price">
                             99.00 vnd
                         </div>
                         <div class="add-to-cart">
                             <button>
-                                Thêm vào giở hàng
+                                <a href="#"> Thêm vào giỏ hàng</a>
                             </button>
+                        </div>
+                        <hr class="product-line" />
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item-mobile">
+                        <div class="product-item-mobile-container">
+                            <div class="product-img">
+                                <a href="product-detail.html"> <img alt="product item" src="./images/p4.png" /></a>
+
+                                <span class="badge bg-danger" class="badge">
+                                    <a href="product-detail.html"><img src="./images/insurance.png" alt="" /></a>
+                                </span>
+                            </div>
+                            <p class="product-name">
+                                <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                    <br />
+                                    Solutions Premium</a>
+
+                            </p>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="status">
+                                <div class="product-status">
+                                    <p>Đã bán </p>
+                                    35
+                                </div>
+                                <div class="product-stock">
+                                    <p>Còn lại</p>
+                                    903
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                99.00 vnd
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                    <a href="#"> Thêm vào giỏ hàng</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item-mobile-container">
+                            <div class="product-img">
+                                <a href="product-detail.html"><img alt="product item" src="./images/p4.png" /></a>
+
+                                <span class="badge bg-danger" class="badge">
+                                    <a href="product-detail.html"><img src="./images/insurance.png" alt="" /></a>
+                                </span>
+                            </div>
+                            <p class="product-name">
+                                <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                    <br />
+                                    Solutions Premium</a>
+                            </p>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="status">
+                                <div class="product-status">
+                                    <p>Đã bán </p>
+                                    35
+                                </div>
+                                <div class="product-stock">
+                                    <p>Còn lại</p>
+                                    903
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                99.00 vnd
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                    <a href="#"> Thêm vào giỏ hàng</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="see-more">
-                <div class="see-more-detail">
-                    <p>Xem thêm</p>
-                    <i class="fa-solid fa-caret-down"></i>
+                <div class="see-more">
+                    <div class="see-more-detail">
+                        <p><a href="#">Xem thêm</a></p>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!-- Sản phẩm bán chay  -->
-        <div class="wrapper">
-            <div class="header-list">
-                <div class="tilte-text">
-                    Sản phẩm bán chay
+        <section>
+            <div class="wrapper-container">
+                <div class="header-list">
+                    <div class="tilte-text">
+                        <a href="product-page.html">Sản phẩm bán chạy</a>
+                    </div>
+                    <hr class="title-line" />
                 </div>
-                <hr class="title-line" />
-            </div>
-            <div>
-                <div class="product-item">
-                    <div class="product-img">
-                        <img alt="product item" src="./images/p4.png" />
-                        <span class="badge bg-danger" class="badge">
-                            <img src="./images/insurance.png" alt="" />
-                        </span>
-                    </div>
-                    <p class="product-name">
-                        Mỹ phẩm Hàn Quốc AZ
-                        Solutions Premium
-                    </p>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="product-status">
-                        <p>Đã bán </p>
-                        35
-                    </div>
-                    <div class="product-stock">
-                        <p>Còn lại</p>
-                        903
-                    </div>
-                    <div class="product-price">
-                        99.00 vnd
-                    </div>
-                    <div class="add-to-cart">
-                        <button>
-                            Thêm vào giở hàng
-                        </button>
-                    </div>
-                    <hr class="product-line" />
-                </div>
-                <div class="product-item">
-                    <div class="product-img">
-                        <img alt="product item" src="./images/p4.png" />
-                        <span class="badge bg-danger" class="badge">
-                            <img src="./images/insurance.png" alt="" />
-                        </span>
-                    </div>
-                    <p class="product-name">
-                        Mỹ phẩm Hàn Quốc AZ
-                        Solutions Premium
-                    </p>
-                    <div class="product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="product-status">
-                        <p>Đã bán </p>
-                        35
-                    </div>
-                    <div class="product-stock">
-                        <p>Còn lại</p>
-                        903
-                    </div>
-                    <div class="product-price">
-                        99.00 vnd
-                    </div>
-                    <div class="add-to-cart">
-                        <button>
-                            Thêm vào giở hàng
-                        </button>
-                    </div>
-                    <hr class="product-line" />
-                </div>
-            </div>
-            <div>
-                <div class="product-item-mobile">
-                    <div class="product-item-mobile-container">
+                <div>
+                    <div class="product-item">
                         <div class="product-img">
-                            <img alt="product item" src="./images/p4.png" />
+                            <a href="product-detail.html"> <img alt="product item" src="./images/p4.png" /></a>
+
                             <span class="badge bg-danger" class="badge">
-                                <img src="./images/insurance.png" alt="" />
+                                <a href="product-detail.html"><img src="./images/insurance.png" alt="" /></a>
                             </span>
                         </div>
                         <p class="product-name">
-                            Mỹ phẩm Hàn Quốc AZ
-                            Solutions Premium
+                            <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                <br />
+                                Solutions Premium</a>
                         </p>
                         <div class="product-rating">
                             <i class="fa-solid fa-star"></i>
@@ -465,35 +416,36 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="status">
-                            <div class="product-status">
-                                <p>Đã bán </p>
-                                35
-                            </div>
-                            <div class="product-stock">
-                                <p>Còn lại</p>
-                                903
-                            </div>
+                        <div class="product-status">
+                            <p>Đã bán </p>
+                            35
+                        </div>
+                        <div class="product-stock">
+                            <p>Còn lại</p>
+                            903
                         </div>
                         <div class="product-price">
                             99.00 vnd
                         </div>
                         <div class="add-to-cart">
                             <button>
-                                Thêm vào giở hàng
+                                <a href="#"> Thêm vào giỏ hàng</a>
                             </button>
                         </div>
+                        <hr class="product-line" />
                     </div>
-                    <div class="product-item-mobile-container">
+                    <div class="product-item">
                         <div class="product-img">
-                            <img alt="product item" src="./images/p4.png" />
+                            <a href="product-detail.html"> <img alt="product item" src="./images/p4.png" /></a>
+
                             <span class="badge bg-danger" class="badge">
-                                <img src="./images/insurance.png" alt="" />
+                                <a href="product-detail.html"><img src="./images/insurance.png" alt="" /></a>
                             </span>
                         </div>
                         <p class="product-name">
-                            Mỹ phẩm Hàn Quốc AZ
-                            Solutions Premium
+                            <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                <br />
+                                Solutions Premium</a>
                         </p>
                         <div class="product-rating">
                             <i class="fa-solid fa-star"></i>
@@ -502,34 +454,116 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="status">
-                            <div class="product-status">
-                                <p>Đã bán </p>
-                                35
-                            </div>
-                            <div class="product-stock">
-                                <p>Còn lại</p>
-                                903
-                            </div>
+                        <div class="product-status">
+                            <p>Đã bán </p>
+                            35
+                        </div>
+                        <div class="product-stock">
+                            <p>Còn lại</p>
+                            903
                         </div>
                         <div class="product-price">
                             99.00 vnd
                         </div>
                         <div class="add-to-cart">
                             <button>
-                                Thêm vào giở hàng
+                                <a href="#"> Thêm vào giỏ hàng</a>
                             </button>
+                        </div>
+                        <hr class="product-line" />
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item-mobile">
+                        <div class="product-item-mobile-container">
+                            <div class="product-img">
+                                <a href="product-detail.html"><img alt="product item" src="./images/p4.png" /></a>
+
+                                <span class="badge bg-danger" class="badge">
+                                    <a href="product-detail.html"><img src="./images/insurance.png" alt="" /></a>
+                                </span>
+                            </div>
+                            <p class="product-name">
+                                <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                    <br />
+                                    Solutions Premium</a>
+                            </p>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="status">
+                                <div class="product-status">
+                                    <p>Đã bán </p>
+                                    35
+                                </div>
+                                <div class="product-stock">
+                                    <p>Còn lại</p>
+                                    903
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                99.00 vnd
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                    <a href="#"> Thêm vào giỏ hàng</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item-mobile-container">
+                            <div class="product-img">
+                                <a href="product-detail.html"> <img alt="product item" src="./images/p4.png" /></a>
+
+                                <span class="badge bg-danger" class="badge">
+                                    <a href="product-detail.html"><img src="./images/insurance.png" alt="" /></a>
+                                </span>
+                            </div>
+                            <p class="product-name">
+                                <a href="product-detail.html"> Mỹ phẩm Hàn Quốc AZ
+                                    <br />
+                                    Solutions Premium</a>
+                            </p>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="status">
+                                <div class="product-status">
+                                    <p>Đã bán </p>
+                                    35
+                                </div>
+                                <div class="product-stock">
+                                    <p>Còn lại</p>
+                                    903
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                99.00 vnd
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                    <a href="#"> Thêm vào giỏ hàng</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="see-more">
-                <div class="see-more-detail">
-                    <p>Xem thêm</p>
-                    <i class="fa-solid fa-caret-down"></i>
+                <div class="see-more">
+                    <div class="see-more-detail">
+                        <p><a href="#">Xem thêm</a></p>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
 
     </main>
 
@@ -547,21 +581,21 @@
                         <div class="hightlight-text">Công Ty TNHH global hitech and media</div>
                         <p>Gia công phần mềm đa cấp tại TpHCM</p>
                         <p>Địa chỉ: số 360c Bến Vân Đồn, Phường 1, Quận 4, Thành phố Hồ Chí Minh</p>
-                        <p>Hotline: 0962564886</p>
-                        <p>Email: globalhitechmedia.info@gmail.com</p>
+                        <p><a href="">Hotline: 0962564886</a></p>
+                        <p><a href="">Email: globalhitechmedia.info@gmail.com</a></p>
 
                     </div>
                     <div class="col-1">
                         <h1>dịch vụ</h1>
                         <hr />
                         <ul>
-                            <li>Lập trình phần mềm đa cấp</li>
-                            <li>Thiết kế website</li>
-                            <li>Lập trình blockchain</li>
-                            <li>Ứng dụng di động</li>
-                            <li>Dịch vụ SEO</li>
-                            <li>Phần mềm ERP</li>
-                            <li>Giải pháp Server</li>
+                            <li><a href="">Lập trình phần mềm đa cấp</a></li>
+                            <li><a href="">Thiết kế website</a></li>
+                            <li><a href="">Lập trình blockchain</a></li>
+                            <li><a href="">Ứng dụng di động</a></li>
+                            <li><a href="">Dịch vụ SEO</a></li>
+                            <li><a href="">Phần mềm ERP</a></li>
+                            <li><a href="">Giải pháp Server</a></li>
                         </ul>
 
                     </div>
@@ -569,14 +603,14 @@
                         <h1>giải pháp công nghệ</h1>
                         <hr />
                         <ul>
-                            <li>Giải pháp tar thưởng đa cấp</li>
-                            <li>Giải pháp sàn thương mại điện tử</li>
-                            <li>Giải pháp blockchain</li>
-                            <li>Giải pháp sàn giao dịch tài chính</li>
-                            <li>Giải pháp giáo dục thường xuyên</li>
-                            <li>Giải pháp mạng xã hội</li>
-                            <li>Giải pháp Microsite</li>
-                            <li>Các giải pháp khác theo đặc trưng ngành</li>
+                            <li><a href="">Giải pháp tar thưởng đa cấp</a></li>
+                            <li><a href="">Giải pháp sàn thương mại điện tử</a></li>
+                            <li><a href="">Giải pháp blockchain</a></li>
+                            <li><a href="">Giải pháp sàn giao dịch tài chính</a></li>
+                            <li><a href="">Giải pháp giáo dục thường xuyên</a></li>
+                            <li><a href="">Giải pháp mạng xã hội</a></li>
+                            <li><a href="">Giải pháp Microsite</a></li>
+                            <li><a href="">Các giải pháp khác theo đặc trưng ngành</a></li>
                         </ul>
 
                     </div>
@@ -584,29 +618,29 @@
                         <h1>Ứng dụng di động</h1>
 
                         <ul>
-                            <li>Mobile Web</li>
-                            <li>Ứng dụng IOS</li>
-                            <li>Ứng dụng Android</li>
+                            <li><a href="">Mobile Web</a></li>
+                            <li><a href="">Ứng dụng IOS</a></li>
+                            <li><a href="">Ứng dụng Android</a></li>
 
                         </ul>
 
                         <h1 style="margin-top: 15px">Phần mềm ERP</h1>
 
                         <ul>
-                            <li>Tư vấn giải pháp ERP</li>
-                            <li>Phát triển chức năng ERP</li>
-                            <li>Hướng dẫn đào tạo ERP</li>
-                            <li>Giải pháp ERP</li>
+                            <li><a href="">Tư vấn giải pháp ERP</a></li>
+                            <li><a href="">Phát triển chức năng ERP</a></li>
+                            <li><a href="">Hướng dẫn đào tạo ERP</a></li>
+                            <li><a href="">Giải pháp ERP</a></li>
 
                         </ul>
 
                         <h1 style="margin-top: 15px">Dịch vụ SEO</h1>
 
                         <ul>
-                            <li>Tư vấn web chuẩn SEO</li>
-                            <li>Dịch vụ SEO top Google</li>
-                            <li>Đăng ký web sàn TMĐT</li>
-                            <li>Đăng ký web Bộ Công Thương</li>
+                            <li><a href="">Tư vấn web chuẩn SEO</a></li>
+                            <li><a href="">Dịch vụ SEO top Google</a></li>
+                            <li><a href="">Đăng ký web sàn TMĐT</a></li>
+                            <li><a href="">Đăng ký web Bộ Công Thương</a></li>
 
                         </ul>
 

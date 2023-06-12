@@ -26,67 +26,80 @@
                 <div class="wrapper">
                     <div class="header-container">
                         <div id="logo_top">
-                            <h1>GG NEWS<h1>
-                                    <a href=""><img class="icons" src="./images/facebook(1).png" alt="fb" /></a>
-                                    <a href="">
-                                        <img class="icons" src="./images/instagram(2).png" alt="ins" />
-                                    </a>
-                                    <a href="">
-                                        <img class="icons" src="./images/twitter(2).png" alt="ins" />
-                                    </a>
+                            <a href="index.html">GG NEWS</a>
 
+                            <a href=""><img class="icons" src="/images/facebook(1).png" alt="fb" /></a>
+                            <a href="">
+                                <img class="icons" src="/images/instagram(2).png" alt="ins" />
+                            </a>
+                            <a href="">
+                                <img class="icons" src="/images/twitter(2).png" alt="ins" />
+                            </a>
                         </div>
 
                         <div class="header-action">
                             <button style="cursor: pointer">
-                                <div class="btn-action">
-                                    <img src="./images/edit(1).png" alt="dang ky" />
+                                <a href="login.html" class="btn-action">
+                                    <img src="/images/edit(1).png" alt="dang ky" />
                                     <p>Đăng Ký</p>
-                                </div>
+                                </a>
 
                             </button>
                             <button style="cursor: pointer">
-                                <div class="btn-action">
-                                    <img src="./images/enter(3).png" alt="dang nhap" />
-                                    <p>Đăng
-                                        Nhập</p>
-                                </div>
+                                <a href="login.html" class="btn-action">
+                                    <img src="/images/enter(3).png" alt="dang nhap" />
+                                    <p>Đăng Nhập</p>
+                                </a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="header-container-mobile">
                     <div class="logo-mobile">
-                        <h1>GG NEWS<h1>
-                                <a href=""><img class="icons" src="./images/facebook(1).png" alt="fb" /></a>
-                                <a href="">
-                                    <img class="icons" src="./images/instagram(2).png" alt="ins" />
-                                </a>
-                                <a href="">
-                                    <img class="icons" src="./images/twitter(2).png" alt="ins" />
-                                </a>
+                        <a href="index.html">GG NEWS</a>
+                        <a href=""><img class="icons" src="/images/facebook(1).png" alt="fb" /></a>
+                        <a href="">
+                            <img class="icons" src="/images/instagram(2).png" alt="ins" />
+                        </a>
+                        <a href="">
+                            <img class="icons" src="/images/twitter(2).png" alt="ins" />
+                        </a>
                     </div>
 
                     <div class="action-mobile">
-                        <button><i class="fa-solid fa-pen-to-square"></i> Đăng Ký</button>
-                        <button><i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập</button>
+                        <button><a href=""><i class="fa-solid fa-pen-to-square"></i> Đăng Ký</a></button>
+                        <button>
+                            <a href=""><i class=" fa-solid fa-right-to-bracket"></i>Đăng Nhập</a>
+                        </button>
                     </div>
-
                 </div>
             </div>
+        </div>
 
+        <div class="wrapper-banner">
             <div class="top-banner">
                 <div class="searchbar">
                     <input type="search" placeholder="tìm kiếm">
-                    <img src="images/magnifier(1).png" alt="search" />
-
+                    <img src="./images/magnifier(1).png" alt="search" />
                 </div>
-                <img class="cart-icon" src="images/shopping-cart(2).png" alt="cart" />
+                <div class="cart-container">
+                    <a href="#">
+                        <img class="cart-icon" src="./images/shopping-cart(2).png" alt="cart" />
+                        <span>
+                            1
+                        </span>
+                    </a>
+                    <span>
+                        1
+                    </span>
+                </div>
             </div>
+        </div>
 
+        <div class="wrapper">
             <div class="nav-bar">
                 <div class="main-logo">
-                    <img src="./images/logo GGnews.png" alt="logo" />
+                    <a href="/"><img src="./images/logo GGnews.png" alt="logo" /></a>
                 </div>
                 <!-- <div class="main-nav"> -->
                 <ul class="main-nav">
@@ -105,11 +118,11 @@
                 </ul>
             </div>
         </div>
+
     </header>
 
-
     <main class="product-detail-bg">
-        <div class="wrapper">
+        <div class="wrapper-product-page">
             <div class="product-detail-container">
                 <div class="product-detail-item">
 
@@ -127,22 +140,36 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <p>Kiểm chứng lâm sàng cho 100 phụ nữ Hàn Quốc bị nám, tàn nhang, đổi mồi sau 2 tuần trong
+                            <p>Kiểm chứng lâm sàng cho 100 phụ nữ Hàn Quốc bị nám, tàn nhang, đổi mồi sau 2 tuần
+                                trong
                                 môi
                                 trường tránh nắng tuyệt vời</p>
-                            <p class="text-price">99.000 vnd</p>
-                            <p class="text-voucher">50.000 vnd + 1000 point</p>
-                            <div class="btn-action">
-                                <button class="btn-cart">Thêm vào giỏ hàng</button>
-                                <button class="btn-buy">Đặt hàng ngay</button>
+                            <ul>
+                                <li>
+                                    <p class="text-price">99.000 vnd</p>
+                                </li>
+                                <li>
+                                    <p class="text-voucher">50.000 vnd + 1000 point</p>
+                                </li>
+                            </ul>
+
+                            <!-- <div class="btn-cart"> -->
+                            <div class="btn-cart">
+                                <button class="btn-add-cart"><a href="#">Thêm vào giỏ hàng</a></button>
+                                <br />
+                                <button class="btn-buy"><a href="#">
+                                        Đặt hàng ngay
+                                    </a></button>
                             </div>
+
+                            <!-- </div> -->
 
                             <h5 class="sub-text">Chia sẻ cho bạn bè</h5>
                             <div class="social-list">
-                                <img src="./images/circle-facebook.png" alt="fb" />
-                                <img src="./images/circle-messenger.png" alt="mess" />
-                                <img src="./images/circle-zalo.png" alt="zalo" />
-                                <img src="./images/circle-copylink.png" alt="link" />
+                                <a href="#"><img src="./images/circle-facebook.png" alt="fb" /></a>
+                                <a href="#"><img src="./images/circle-messenger.png" alt="mess" /></a>
+                                <a href="#"><img src="./images/circle-zalo.png" alt="zalo" /></a>
+                                <a href="#"><img src="./images/circle-copylink.png" alt="link" /></a>
                             </div>
                         </div>
                     </div>
@@ -183,7 +210,7 @@
 
             <div class="comment-container">
                 <h1>Bình luận</h1>
-                <p>0 comment</p>
+                <p>0 comments</p>
 
                 <div class="sort-comment">
                     <p>Sort</p>
@@ -199,31 +226,25 @@
                     <img alt="user img" src="./images/profile.png" />
                     <input class="comments" placeholder="Add a comment ..." />
                 </div>
-
-
             </div>
-
-
         </div>
         <!--  sản phẩm liên quan      -->
         <div class="wrapper">
             <div class="relative-product">
                 <div class="header-list">
                     <div class="tilte-text">
-                        sản phẩm liên quan </div>
+                        <a href="product-page.html">sản phẩm liên quan</a>
+                    </div>
                     <hr class="title-line" />
                 </div>
-
                 <div>
                     <div class="product-item">
                         <div class="product-img">
                             <img alt="product item" src="./images/p4.png" />
-                            <span class="badge bg-danger" class="badge">
-                                <img src="./images/insurance.png" alt="" />
-                            </span>
+
                         </div>
                         <p class="product-name">
-                            Mỹ phẩm Hàn Quốc AZ
+                            Mỹ phẩm Hàn Quốc AZ <br />
                             Solutions Premium
                         </p>
                         <div class="product-rating">
@@ -246,7 +267,9 @@
                         </div>
                         <div class="add-to-cart">
                             <button>
-                                Thêm vào giở hàng
+                                <a href="#">
+                                    Thêm vào giỏ hàng
+                                </a>
                             </button>
                         </div>
 
@@ -255,12 +278,10 @@
                     <div class="product-item">
                         <div class="product-img">
                             <img alt="product item" src="./images/p4.png" />
-                            <span class="badge bg-danger" class="badge">
-                                <img src="./images/insurance.png" alt="" />
-                            </span>
+
                         </div>
                         <p class="product-name">
-                            Mỹ phẩm Hàn Quốc AZ
+                            Mỹ phẩm Hàn Quốc AZ <br />
                             Solutions Premium
                         </p>
                         <div class="product-rating">
@@ -283,7 +304,9 @@
                         </div>
                         <div class="add-to-cart">
                             <button>
-                                Thêm vào giở hàng
+                                <a href="#">
+                                    Thêm vào giỏ hàng
+                                </a>
                             </button>
                         </div>
 
@@ -294,15 +317,13 @@
 
                 <div>
                     <div class="product-item-mobile">
-                        <div>
+                        <div class="product-item-list">
                             <div class="product-img">
                                 <img alt="product item" src="./images/p4.png" />
-                                <span class="badge bg-danger" class="badge">
-                                    <img src="./images/insurance.png" alt="" />
-                                </span>
+
                             </div>
                             <p class="product-name">
-                                Mỹ phẩm Hàn Quốc AZ
+                                Mỹ phẩm Hàn Quốc AZ <br />
                                 Solutions Premium
                             </p>
                             <div class="product-rating">
@@ -328,7 +349,9 @@
                             </div>
                             <div class="add-to-cart">
                                 <button>
-                                    Thêm vào giở hàng
+                                    <a href="#">
+                                        Thêm vào giỏ hàng
+                                    </a>
                                 </button>
                             </div>
 
@@ -337,12 +360,10 @@
                         <div>
                             <div class="product-img">
                                 <img alt="product item" src="./images/p4.png" />
-                                <span class="badge bg-danger" class="badge">
-                                    <img src="./images/insurance.png" alt="" />
-                                </span>
+
                             </div>
                             <p class="product-name">
-                                Mỹ phẩm Hàn Quốc AZ
+                                Mỹ phẩm Hàn Quốc AZ <br />
                                 Solutions Premium
                             </p>
                             <div class="product-rating">
@@ -368,7 +389,9 @@
                             </div>
                             <div class="add-to-cart">
                                 <button>
-                                    Thêm vào giở hàng
+                                    <a href="#">
+                                        Thêm vào giỏ hàng
+                                    </a>
                                 </button>
                             </div>
 
@@ -397,28 +420,29 @@
                     <div class="col-1">
                         <h1>thông tin liên hệ</h1>
                         <hr />
-                        <p>Chúng tôi luôn sẵn sàng tư vấn Quý đối tác có nhu cầu gia công các phần mềm đa cấp, vui lòng
+                        <p>Chúng tôi luôn sẵn sàng tư vấn Quý đối tác có nhu cầu gia công các phần mềm đa cấp, vui
+                            lòng
                             liên
                             hệ
                         </p>
                         <div class="hightlight-text">Công Ty TNHH global hitech and media</div>
                         <p>Gia công phần mềm đa cấp tại TpHCM</p>
                         <p>Địa chỉ: số 360c Bến Vân Đồn, Phường 1, Quận 4, Thành phố Hồ Chí Minh</p>
-                        <p>Hotline: 0962564886</p>
-                        <p>Email: globalhitechmedia.info@gmail.com</p>
+                        <p><a href="">Hotline: 0962564886</a></p>
+                        <p><a href="">Email: globalhitechmedia.info@gmail.com</a></p>
 
                     </div>
                     <div class="col-1">
                         <h1>dịch vụ</h1>
                         <hr />
                         <ul>
-                            <li>Lập trình phần mềm đa cấp</li>
-                            <li>Thiết kế website</li>
-                            <li>Lập trình blockchain</li>
-                            <li>Ứng dụng di động</li>
-                            <li>Dịch vụ SEO</li>
-                            <li>Phần mềm ERP</li>
-                            <li>Giải pháp Server</li>
+                            <li><a href="">Lập trình phần mềm đa cấp</a></li>
+                            <li><a href="">Thiết kế website</a></li>
+                            <li><a href="">Lập trình blockchain</a></li>
+                            <li><a href="">Ứng dụng di động</a></li>
+                            <li><a href="">Dịch vụ SEO</a></li>
+                            <li><a href="">Phần mềm ERP</a></li>
+                            <li><a href="">Giải pháp Server</a></li>
                         </ul>
 
                     </div>
@@ -426,14 +450,14 @@
                         <h1>giải pháp công nghệ</h1>
                         <hr />
                         <ul>
-                            <li>Giải pháp tar thưởng đa cấp</li>
-                            <li>Giải pháp sàn thương mại điện tử</li>
-                            <li>Giải pháp blockchain</li>
-                            <li>Giải pháp sàn giao dịch tài chính</li>
-                            <li>Giải pháp giáo dục thường xuyên</li>
-                            <li>Giải pháp mạng xã hội</li>
-                            <li>Giải pháp Microsite</li>
-                            <li>Các giải pháp khác theo đặc trưng ngành</li>
+                            <li><a href="">Giải pháp tar thưởng đa cấp</a></li>
+                            <li><a href="">Giải pháp sàn thương mại điện tử</a></li>
+                            <li><a href="">Giải pháp blockchain</a></li>
+                            <li><a href="">Giải pháp sàn giao dịch tài chính</a></li>
+                            <li><a href="">Giải pháp giáo dục thường xuyên</a></li>
+                            <li><a href="">Giải pháp mạng xã hội</a></li>
+                            <li><a href="">Giải pháp Microsite</a></li>
+                            <li><a href="">Các giải pháp khác theo đặc trưng ngành</a></li>
                         </ul>
 
                     </div>
@@ -441,29 +465,29 @@
                         <h1>Ứng dụng di động</h1>
 
                         <ul>
-                            <li>Mobile Web</li>
-                            <li>Ứng dụng IOS</li>
-                            <li>Ứng dụng Android</li>
+                            <li><a href="">Mobile Web</a></li>
+                            <li><a href="">Ứng dụng IOS</a></li>
+                            <li><a href="">Ứng dụng Android</a></li>
 
                         </ul>
 
                         <h1 style="margin-top: 15px">Phần mềm ERP</h1>
 
                         <ul>
-                            <li>Tư vấn giải pháp ERP</li>
-                            <li>Phát triển chức năng ERP</li>
-                            <li>Hướng dẫn đào tạo ERP</li>
-                            <li>Giải pháp ERP</li>
+                            <li><a href="">Tư vấn giải pháp ERP</a></li>
+                            <li><a href="">Phát triển chức năng ERP</a></li>
+                            <li><a href="">Hướng dẫn đào tạo ERP</a></li>
+                            <li><a href="">Giải pháp ERP</a></li>
 
                         </ul>
 
                         <h1 style="margin-top: 15px">Dịch vụ SEO</h1>
 
                         <ul>
-                            <li>Tư vấn web chuẩn SEO</li>
-                            <li>Dịch vụ SEO top Google</li>
-                            <li>Đăng ký web sàn TMĐT</li>
-                            <li>Đăng ký web Bộ Công Thương</li>
+                            <li><a href="">Tư vấn web chuẩn SEO</a></li>
+                            <li><a href="">Dịch vụ SEO top Google</a></li>
+                            <li><a href="">Đăng ký web sàn TMĐT</a></li>
+                            <li><a href="">Đăng ký web Bộ Công Thương</a></li>
 
                         </ul>
 
