@@ -948,6 +948,13 @@ input[type="search"]::placeholder {
   padding: 20px;
 }
 
+.tilte-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-text);
+  font-size: 21px;
+}
+
 .tilte-text a {
   text-transform: uppercase;
   text-align: center;
@@ -1056,6 +1063,7 @@ input[type="search"]::placeholder {
   position: absolute;
   top: -10px;
   right: -15px;
+  background-color: none;
 }
 
 .product-item-mobile {
@@ -2658,4 +2666,43 @@ footer {
   background: black;
 }
 
+/* checkout  */
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+  height: 42px !important;
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+}
 
+.woocommerce_checkout_place_order {
+  background: #3FBDAC;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.woocommerce_checkout_place_order:hover {
+  background: #339a7d;
+}
+
+.clear-cart:hover {
+  color: white; 
+  background: #3FBDAC;
+  border-radius: 5px;
+}
+
+.checkout-button {
+  background: #3FBDAC;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.checkout-button:hover {
+  background: #339a7d;
+}
+
+.cart_totals table td .amount {
+  color: #3FBDAC;
+}
+
+.woocommerce-Price-currencySymbol {
+  color: #3FBDAC;
+}
